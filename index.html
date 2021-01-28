@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zling-bank</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- User css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- login box -->
+    <div id="login-area">
+        <h1 class="bank-title">Welcome to zling-bank</h1>
+        <div class="submit-area ">
+            <h4>Login</h4>
+            <input type="email" class="form-control input-box" placeholder="Enter your email here"> <br>
+            <input type="password" name="password" class="input-box form-control" placeholder="Enter your password">
+            <br>
+            <button class="btn btn-success" type="submit">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit ">
+                    <h5>Deposit</h5>
+                    <h2>$<span id="present-deposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="withdraw ">
+                    <h5>Withdraw</h5>
+                    <h2>$<span id="present-withdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="balance ">
+                    <h5>Balance</h5>
+                    <h2>$<span id="present-balance">00</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="activitySec">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="depositInput ">
+            <h4>Deposit</h4>
+            <input type="text" placeholder = "$ Amount you want to deposit" class="input-box form-control" id = "depositAmount"><br>
+            <button type="submit" class="btn btn-success">Deposit</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="withdrawInput ">
+            <h4>Withdraw</h4>
+            <input type="text" placeholder = "$ Amount you want to withdraw" class="input-box form-control" id= "withdrawnAmount">
+            <br>
+            <button type="submit" class="btn btn-success">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- User js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
